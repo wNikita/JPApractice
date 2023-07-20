@@ -36,6 +36,8 @@ public class EmployeeForTransient {
             System.out.println("Age: " + retrievedEmployee.getEmail());
             System.out.println("Temporary Field: " + retrievedEmployee.isBoolean());
 
+            em.remove(retrievedEmployee);
+            System.out.println("remove Done");
             em.getTransaction().commit();
         } catch (Exception e) {
             // Handle exceptions

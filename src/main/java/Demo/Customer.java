@@ -3,18 +3,13 @@ package Demo;
 import javax.persistence.*;
 
 @Entity(name="abc")
-@Table(name="user")
+@Table(name="user" ,uniqueConstraints={@UniqueConstraint(columnNames  ={"name","mail"})})
 public class Customer {
-    public fuelType getFuel() {
-        return fuel;
-    }
 
-    public void setFuel(fuelType fuel) {
-        this.fuel = fuel;
-    }
 
     @Id
-    @OrderBy("id ASC")
+
+    @OrderBy("id DESC")
     @GeneratedValue(strategy = GenerationType.AUTO)
 
     @Column(name = "id")
@@ -43,7 +38,13 @@ public class Customer {
     public int getUserId() {
         return userId;
     }
+    public fuelType getFuel() {
+        return fuel;
+    }
 
+    public void setFuel(fuelType fuel) {
+        this.fuel = fuel;
+    }
     public void setUserId(int userId) {
         this.userId = userId;
     }
