@@ -1,0 +1,16 @@
+1.JPA(Java Persistence API)
+        -In vast project we have to write so much query
+        -So JSP provided that platform where we dont need to write any query
+        -Object Relational Mapping (ORM) is a functionality which is used to develop and maintain a
+        relationship between an object and relational database by mapping an object state to database column.
+        -Mostly Hibernate is use
+        -Types of Mapping
+        1.One-to-one
+        2.One-to-many
+        3.Many-to-one
+        4.Many-to-many
+        -JPA Entity is a group of states associated together in a single unit.
+        -begin() method - This method is used to start the transaction.
+        -persist() - This method is used to make an instance managed and persistent.
+        entity instance is passed within this method
+        -Closing the transaction   em.getTransaction().commit();
