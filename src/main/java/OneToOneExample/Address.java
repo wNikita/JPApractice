@@ -15,6 +15,7 @@ public class Address {
     private String zipCode;
 
     @OneToOne
+    // mapping the primary key of one entity to the foreign key of another entity
     @MapsId
     @JoinColumn(name = "user_id")
     private User user;

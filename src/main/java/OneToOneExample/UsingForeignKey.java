@@ -28,14 +28,14 @@ public class UsingForeignKey {
 
 
         em.getTransaction().commit();
-        Customer pt = em.find(Customer.class, 6);
+        Customer pt = em.find(Customer.class, 41);
 
         System.out.println("Passport id is " + pt.getId());
 
         System.out.println("Passport number is " + pt.getName());
 
         System.out.println("Citizen name is " + pt.getCity().getcName());
-        City cz = em.find(City.class, 7);
+        City cz = em.find(City.class, 42);
 
         System.out.println("Citizen id is " + cz.getId());
 
