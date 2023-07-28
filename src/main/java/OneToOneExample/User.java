@@ -14,7 +14,6 @@ public class User {
 
     @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
     //specify the primary key of the associated entity as the foreign key of the current entity
-
     @PrimaryKeyJoinColumn
     private Address address;
 

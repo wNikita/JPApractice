@@ -4,12 +4,12 @@ import javax.persistence.*;
 @Entity
 public class City {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
     private  String cName;
 
-    @OneToOne(mappedBy = "city")
+    @OneToOne(mappedBy = "city",orphanRemoval = true,cascade = CascadeType.REMOVE)
     private Customer customer;
 
     public int getId() {

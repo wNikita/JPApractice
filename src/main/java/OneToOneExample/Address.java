@@ -8,8 +8,6 @@ public class Address {
 
     @Id
     private int id;
-
-
     private String city;
 
     private String zipCode;

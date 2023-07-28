@@ -51,7 +51,6 @@
 //            address.setState("bugsgs");
 //            address.setZip("6789");
 //            employee.setAddress(address);
-//            em.persist(address);
 //            em.persist(employee);
 //            em.getTransaction().commit();
 //            Employee cz = em.find(Employee.class, 70);
